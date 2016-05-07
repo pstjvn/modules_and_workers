@@ -1,0 +1,30 @@
+.pstj-ng-cloak {
+  display: none ! important;
+}
+.pstj-switch-off {
+  visibility: hidden;
+}
+* {
+  -webkit-box-sizing: border-box;
+  /* @alternative */
+  -moz-box-sizing: border-box;
+  /* @alternative */
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+*:focus {
+  outline-style: none;
+}
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
