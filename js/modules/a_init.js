@@ -9,16 +9,11 @@
 
 goog.provide('a_init');
 
-// Require the template used for main app shell / skeleton view
-goog.require('app.template');
-goog.require('goog.dom');
+goog.require('app.ui');
 
 /** Render the app shell */
 a_init = function() {
-  console.log('Code executed in initial / scaffold module');
-  console.log('This module brings only the view');
-  document.body.appendChild(
-      goog.dom.safeHtmlToNode(app.template.Test(null).toSafeHtml()));
+  console.log('Code executed in initial / scaffold module, provides only UI');
 };
 
 a_init();

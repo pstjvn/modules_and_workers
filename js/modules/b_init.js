@@ -6,7 +6,7 @@
  */
 goog.provide('b_init');
 
-goog.require('app');
+goog.require('app.alias');
 goog.require('app.bindui');
 goog.require('goog.Promise');
 goog.require('goog.functions');
@@ -33,7 +33,7 @@ b_init = function() {
       mm.execOnLoad('c', function() {
         console.log('The third module has been loaded...');
         // Send to worker will available after the module loads.
-        app.sendToWorker(url).then(resolve);
+        app.alias.sendToWorker(url).then(resolve);
       });
     });
   };

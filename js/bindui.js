@@ -1,6 +1,6 @@
 goog.provide('app.bindui');
 
-goog.require('app');
+goog.require('app.ui');
 goog.require('ct.shared.command');
 goog.require('goog.events');
 goog.require('goog.events.EventType');
@@ -21,10 +21,11 @@ app.bindui.handleClick = function(e) {
   // The third module is responsible for setting up the worker instance
   // on the app and wiring up the handler.
   // For now we send predefined command...
-  if (app.bindui.internalHandler != null)
+  if (app.bindui.internalHandler != null) {
     app.bindui.internalHandler(url).then(function(resp) {
       goog.dom.setTextContent(document.querySelector('#output'), resp);
     });
+  }
 };
 
 /**
